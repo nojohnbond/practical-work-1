@@ -241,3 +241,14 @@ $ git push -u origin main # Если команда приведёт к ошиб
 ```
 
 В дальнейшем при работе с удалённым репозиторием флаг -u можно опустить и писать просто git push.
+
+## Тестируем mermaid схему
+
+```mermaid
+graph LR;
+  untracked -- "git add" --> staged;
+  staged    -- "???"     --> tracked/comitted;
+
+%% стрелка без текста для примера: 
+  A --> B;
+```
