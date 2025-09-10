@@ -253,4 +253,5 @@ graph LR;
 
 %% вариант изменения отслеживаемого файла: 
   modified -- "git add" --> staged;
+  tracked/comitted -- "Изменения" --> modified;
 ```
