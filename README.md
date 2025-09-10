@@ -244,11 +244,14 @@ $ git push -u origin main # Если команда приведёт к ошиб
 
 ## Тестируем mermaid схему
 
+### Типичный жизненный цикл файла в Git
+
 ```mermaid
 graph LR;
   untracked -- "git add" --> staged;
-  staged    -- "???"     --> tracked/comitted;
+  staged    -- "git commit"     --> tracked/comitted;
 
-%% стрелка без текста для примера: 
-  A --> B;
+%% вариант изменения отслеживаемого файла: 
+  modified -- "git add" --> staged;
+  staged    -- "git commit"     --> tracked/comitted;
 ```
